@@ -1,0 +1,7 @@
+#020858
+#2f2c79
+#101bb4
+
+font-family: 'Patua One', serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Lora', serif;

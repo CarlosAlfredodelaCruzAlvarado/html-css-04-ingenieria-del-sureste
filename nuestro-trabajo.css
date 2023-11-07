@@ -1,0 +1,361 @@
+.header{
+    display: flex;
+    padding-bottom:25px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    flex: 1;
+    width: 35%;
+    align-self: center;
+}
+
+.logoImg{
+
+    width: -webkit-fill-available;
+    filter: invert(15%) sepia(93%) saturate(1044%) hue-rotate(220deg) brightness(101%) contrast(99%);
+    cursor: pointer;
+}
+
+.navBar{
+    flex: 3;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.navBarUl{
+    display: flex;
+    list-style: none;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.navBar a{
+    cursor: pointer;
+    font-family: 'Domine', serif;
+    font-size: 25px;
+    color: #6770eb;
+    position: relative;
+    border: 1px solid transparent;
+    padding: 15px;
+    transition:none;
+    font-weight: bold;
+}
+
+.navBar a:hover{
+    color: #020858;
+    transition: 0.5s;
+}
+
+.navBar a.cotizaciones:hover{
+    border: 1px solid #101bb4;
+    padding: 15px;
+    color: white;
+    background-color: #5538f8;
+    transition: .4s;
+}
+
+body{
+    background-color: white;
+}
+
+.seccion{
+padding: 50px 0;
+line-height: normal;
+}
+
+.centerHome{
+    padding: 0 20px;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Patua One', serif;
+    font-weight: bolder;
+    color: #020858;
+    margin-bottom: 20px;
+}
+
+.Slogan_A, .subSlogan {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    color: #020858;
+    padding: 30px 0 10px 0;
+}
+
+.Slogan_B {
+    text-align: justify;
+    font-size: 22px;
+    font-family: 'Noto Serif', serif;
+    color: #020858;
+    padding: 15px 0;
+}
+
+.trabajo{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    justify-content: center;
+    gap: 50px;
+}
+
+.trabajoImg{
+    display: flex;
+    width: 300px;
+    height:max-content;
+}
+
+.botonCotizacion{
+    border: 1px solid #101bb4;
+    color: white;
+    background-color: #313de0;
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.seccionCotizacion{
+    display: flex;
+}
+
+.seccionCotizacion img{
+    max-width: 35%;
+    max-height: 500px;
+    object-fit:contain;
+    border-radius: 50px;
+    flex: 1;
+}
+
+.seccionCotizacionTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.seccionCotizacionTxt .slogan{
+    font-size: 35px;
+}
+
+.botonCotizacion{
+    margin-top: 30px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 100px 0;
+    line-height: normal;
+
+}
+
+.footer div{
+    flex:1;
+    justify-content: space-around;
+    align-items:flex-start; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+    
+}
+
+.footer h1{
+    font-family: 'Patua One', serif;
+    font-weight:bold;
+    padding: 10px 0;
+    font-size: 30px;
+    color: #020858;
+}
+
+.footer h2{
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #020858;
+}
+
+.footer h3{
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    padding: 5px 0;
+    font-size: 20px;
+    color: #6770eb;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    body{
+        width: 100%;
+
+    }
+    
+    .header{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navBarUl{
+        flex-direction: row;
+        
+    }
+
+    .seccion{
+        padding: 25px 0;
+        
+    }
+    .centerHome{
+        padding: 20px;
+    }
+
+
+    .seccionCotizacion{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .seccionCotizacion img{
+        width: 30%;
+    }
+
+    .seccionCotizacion .slogan{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .seccionCotizacion .subSlogan{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+    }
+
+    .footer div{
+        margin: 0 20px;
+    }
+  
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    body{
+        width: 100%;
+    }
+    
+    .header{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo{
+        width: 70%;
+    }
+
+    .navBarUl{
+        flex-direction: column;
+    }
+
+    .navBarUl a{
+        padding: 5px;
+    }
+
+    .seccion{
+        padding: 25px 0;
+    }
+    .centerHome{
+        padding: 0;
+        margin: 0 20px;
+        justify-content: center;
+        
+    }
+
+    .slogan {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Patua One', serif;
+        font-weight: bolder;
+        color: #020858;
+        margin-bottom: 20px;
+    }
+    
+    .Slogan_A {
+        text-align: center;
+        font-size: 22px;
+        font-family: 'Noto Serif', serif;
+        font-weight: bold;
+        color: #020858;
+        padding: 30px 0 10px 0;
+    }
+    
+    .Slogan_B {
+        text-align: justify;
+        font-size: 15px;
+        font-family: 'Noto Serif', serif;
+        color: #020858;
+        padding: 15px 0;
+    }
+
+    .seccionCotizacion{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .seccionCotizacion img{
+        width: 100%;
+    }
+
+    .seccionCotizacion .slogan{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .seccionCotizacion .subSlogan{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .botonCotizacion{
+        width: 100%;
+        font-size: 20px;
+    }
+
+  
+    
+    .footer{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .footer div{
+        margin: 20px 10px;
+        align-items: center;
+    
+    }
+}

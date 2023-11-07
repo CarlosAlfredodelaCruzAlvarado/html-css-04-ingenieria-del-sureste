@@ -1,0 +1,688 @@
+.header{
+    display: flex;
+    padding-bottom:25px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    flex: 1;
+    width: 35%;
+    align-self: center;
+}
+
+.logoImg{
+
+    width: -webkit-fill-available;
+    filter: invert(15%) sepia(93%) saturate(1044%) hue-rotate(220deg) brightness(101%) contrast(99%);
+    cursor: pointer;
+}
+
+.navBar{
+    flex: 3;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.navBarUl{
+    display: flex;
+    list-style: none;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.navBar a{
+    cursor: pointer;
+    font-family: 'Domine', serif;
+    font-size: 25px;
+    color: #6770eb;
+    position: relative;
+    border: 1px solid transparent;
+    padding: 15px;
+    transition:none;
+    font-weight: bold;
+}
+
+.navBar a:hover{
+    color: #020858;
+    transition: 0.5s;
+}
+
+.navBar a.cotizaciones:hover{
+    border: 1px solid #101bb4;
+    padding: 15px;
+    color: white;
+    background-color: #5538f8;
+    transition: .4s;
+}
+
+body{
+    background-color: white;
+}
+
+.seccion{
+    padding: 50px 0;
+    line-height: normal;
+    }
+
+.centerServicio{
+    padding: 0 10%;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Patua One', serif;
+    font-weight: bolder;
+    color: #020858;
+    margin-bottom: 30px;
+}
+
+.subSlogan {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    color: #020858;
+}
+
+.centerClave{
+    padding: 0 150px;
+}
+
+.seccionServicios{
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: row;
+    margin:0
+}
+
+.seccionServicios_A{
+    display: flex;
+    gap:50px;
+    flex-direction: column;
+    
+}
+
+.seccionServicios div{
+    flex: 1;
+    gap: 20px;
+}
+
+.sloganServicios{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Patua One', serif;
+    font-weight: bolder;
+    color: #020858;
+    margin-bottom: 0;
+}
+
+.promesa{
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    align-items: flex-start;
+    
+    
+}
+
+.promesa_B{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0 50px;
+gap:20px;
+height: fit-content;
+}
+
+.promesaImg{
+    max-width: auto;
+    max-height: 400px;
+    object-fit:cover;
+    border-radius: 10px;
+    
+}
+
+
+.subSlogan_A{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    color: #020858;
+    margin-bottom: 20px;
+
+}
+
+.subSlogan_B{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Noto Serif', serif;
+    color: #020858;
+
+}
+
+.seccionPlanes{
+    display: flex;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+    margin: 0 50px;
+    gap: 30px;
+}
+
+.seccionPlanes div{
+    flex: 1;
+    flex-basis: 0;
+    border: 1px solid rgb(232, 230, 230);
+}
+
+.planesImg{
+    height: 250px;
+    object-fit: cover;
+    width:100%;
+}
+
+.planesTxt {
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+    font-weight: bolder;
+    color: #020858;
+    padding: 20px 10px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.planesSubTxt  {
+    font-size: 18px;
+    font-family: 'Lora', serif;
+    color: #020858;
+    padding: 10px 20px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.botonServicio, .botonCotizacion{
+    border: 1px solid #101bb4;
+    color: white;
+    background-color: #313de0;
+    padding: 20px;
+    font-size: 25px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.comentario{
+    font-size: 40px;
+    color: #020858;
+    text-align: center;
+}
+
+.centerComentario{
+    padding: 20px;
+    margin: 0 150px;
+    background-color: rgba(228, 226, 254, 0.848);
+}
+
+.puntosFuertes{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.puntos_A{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    gap:20px;
+    flex: 1;
+justify-content: space-between;
+height: 100%;
+    }
+
+    .puntos_A h1 {
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 20px;
+
+    }
+
+    .puntos_A h2{
+        font-size: 25px;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    .puntos_B{
+        flex:1.5;
+    
+ justify-content: center;
+        display: flex;
+
+    }    
+
+.comentarioPersona{
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content:center;
+gap: 40px;
+padding-top: 30px;
+}
+
+.comentarioPersona h3{
+color: #020858;
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+}
+
+.comentarioPersona img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.seccionCotizacion{
+    display: flex;
+}
+
+.seccionCotizacion img{
+    max-width: 35%;
+    max-height: 500px;
+    object-fit:contain;
+    border-radius: 50px;
+    flex: 1;
+}
+
+.seccionCotizacionTxt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.seccionCotizacionTxt .slogan{
+    font-size: 35px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 100px 0;
+    line-height: normal;
+
+}
+
+.footer div{
+    flex:1;
+    justify-content: space-around;
+    align-items:flex-start; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+    
+}
+
+.footer h1{
+    font-family: 'Patua One', serif;
+    font-weight:bold;
+    padding: 10px 0;
+    font-size: 30px;
+    color: #020858;
+}
+
+.footer h2{
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #020858;
+}
+
+.footer h3{
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    padding: 5px 0;
+    font-size: 20px;
+    color: #6770eb;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    
+    body{
+        width: 100%;
+
+    }
+    
+    .header{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navBarUl{
+        flex-direction: row;
+        
+    }
+
+    .seccion{
+        padding: 25px 0;
+        
+    }
+
+    .promesa{
+    padding: 0;
+    justify-content: space-between;
+   
+    }
+    .promesa_B h1{
+margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .subSlogan_A, .subSlogan_B{
+font-size: 20px;
+margin-bottom: 0;
+text-align: center;
+    }
+
+    .promesaImg{
+        max-height: 300px;
+        align-self: center;
+    }
+
+    .promesa_A{
+        align-self: center;
+    }
+
+    .promesa_B{
+        padding: 0 20px;
+    }
+
+    .centerClave{
+        padding: 20px;
+    }
+
+
+    .centerHome{
+        padding-left: 100px;
+    }
+
+    .seccionPlanes{
+        flex-direction: column;
+    }
+
+    .puntosImg{
+        width: 50%;
+    }
+
+    .puntosFuertes{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .puntos_A h1, .puntos_A h2{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .puntos_A{
+        padding: 0;
+    }
+
+    .puntosImg{
+        width: 100%;
+    }
+
+    .centerComentario{
+    margin: 0 50px;    
+    }
+    .comentario{
+        font-size: 30px;
+    }
+
+    .seccionCotizacion{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .seccionCotizacion img{
+        width: 30%;
+    }
+
+    .seccionCotizacion .slogan{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .seccionCotizacion .subSlogan{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+    }
+
+    .footer div{
+        margin: 0 20px;
+    }
+  
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    body{
+        width: 100%;
+    }
+    
+    .header{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo{
+        width: 70%;
+    }
+
+    .navBarUl{
+        flex-direction: column;
+    }
+
+    .navBarUl a{
+        padding: 5px;
+    }
+
+    .seccion{
+        padding: 25px 0;
+    }
+    .centerHome{
+        padding: 0;
+        margin: 0 20px;
+        justify-content: center;
+        
+    }
+
+    .slogan{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .subSlogan{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .botonInicio{
+        font-size: 20px;
+        width: 100%;
+
+    }
+
+    .centerServicio{
+        padding: 0;
+    }
+
+    .seccionServicios{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promesa{
+        padding: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .promesa_B{
+        padding: 0;
+    }
+
+    .promesa_B h2{
+        font-size: 20px;
+        margin :0;
+    }
+
+    .promesaImg{
+        height: 200px;
+        margin-top: 20px;
+    }
+
+
+    .centerClave{
+        padding: 0;
+    }
+
+    .seccionPlanes{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .botonServicio{
+        font-size: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .centerComentario{
+    margin: 0 20px;    
+    }
+    .comentario{
+        font-size: 20px;
+    }
+
+    .comentarioPersona{
+        flex-direction: column-reverse;
+
+    }
+
+    .comentarioPersona p{
+        font-size: 15px;
+
+    }
+
+
+    .seccionCotizacion{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .seccionCotizacion img{
+        width: 100%;
+    }
+
+    .seccionCotizacion .slogan{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .seccionCotizacion .subSlogan{
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .botonCotizacion{
+        width: 100%;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+
+
+    .puntosImg{
+        width: 100%;
+    }
+
+    .puntosFuertes{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .puntos_A{
+        padding: 0;
+    }
+
+    .puntos_A h1, .puntos_A h2{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+
+
+
+    .footer{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .footer div{
+        margin: 20px 10px;
+        align-items: center;
+    
+    }
+
+
+
+}

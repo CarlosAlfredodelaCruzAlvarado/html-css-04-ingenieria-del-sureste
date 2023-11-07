@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es, en, ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ingeniería del Sureste</title>
+        <link rel="stylesheet" href="cotizaciones.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Serif:wght@300&family=Patua+One&display=swap" rel="stylesheet">
+
+    </head>
+    <header class="header">
+        <a class="logo" href="/index.html">
+        <img class="logoImg" src="/img/logo.svg" alt="Logo"></img>
+        </a>
+        <nav class="navBar">
+            <ul class="navBarUl">
+                <a href="/nosotros.html">Nosotros</a>
+                <a href="/nuestro-trabajo.html">Nuestro Trabajo</a>
+                <a href="servicios.html">Servicios</a>
+                <a class="cotizaciones" href="cotizaciones.html">Cotizaciones</a>
+                
+            </ul>
+        </nav>
+    </header>
+    <body >
+        <section class="seccion">
+            <div class="centerHome">
+                <h1 class="slogan">Construyamos algo grandioso juntos</h1>
+                <h1 class="Slogan_A">Sea cual sea su anhelo, estamos entusiasmados por diseñar y construir su próxima gran modificación a su hogar o asistirlo en una renovación importante. ¡Es un placer para nosotros hacerlo posible!"</h1>
+            </div>
+        </section>
+        <section>
+            <form class="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" minlength="10" maxlength="10" required>
+        
+                <label for="direccion">Dirección (opcional):</label>
+                <input type="text" id="direccion" name="direccion">
+        
+                <label for="presupuesto">Presupuesto:</label>
+                <select id="presupuesto" name="presupuesto" required>
+                    <option disabled selected>Seleccione uno...</option>
+                    <option value="bajo">Menos de 10,000 MXN</option>
+                    <option value="medio">Entre 10,000 y 30,000MXN</option>
+                    <option value="alto">Más de 30,000 MXN</option>
+                </select>
+        
+                <label for="ideas">Ideas:</label>
+                <textarea id="ideas" name="ideas" rows="4" required></textarea>
+        
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        
+<script src="index.js"></script>
+    </body>
+    <footer class="footer">
+        <div >
+            <h1>Ingeniería del Sureste</h1>
+            <h2>
+                <p>Calle 50 #566</p>
+                <p>Coatzacoalcos, Veracruz</p>
+            </h2>
+            <a href="politica-privacidad.html">
+                <h3>Política de privacidad</h3>
+            </a>    
+        </div>
+        <div>
+            <h1>Bolsa de Trabajo</h1>
+            <h2>Siempre dispuestos a intercambios profesionales.</h2>
+            <a href="mailto:correo@correo.com">
+                <h3>¡Platiquemos!</h3>
+            </a>    
+        </div>
+        <div>
+            <h1>Redes sociales</h1>
+            <a href="www.facebook.com"><h3>Facebook</h3></a>
+            <a href="www.instagram.com"><h3>Instagram</h3></a>
+            <a href="www.linkedin.com"><h3>LinkedIn</h3></a>
+        </div>
+        <div>
+            <h1>Contacto</h1>
+            <a href="mailto:correo@correo.com">
+            <h3>Email</h3></a>
+            <a href="tel:921000000">
+            <h3>921-000-000</h3>
+            </a>
+        </div>
+    </footer>
+</html>
